@@ -1,0 +1,11 @@
+streamlit
+langchain==0.3.7
+langchain-groq
+langchain-community
+langchain-huggingface
+langchain-chroma==0.1.4
+pypdf
+sentence-transformers
+chromadb==0.5.23
+protobuf==4.25.3
+pysqlite3-binary
