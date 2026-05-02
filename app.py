@@ -1,3 +1,13 @@
+import sys
+__import__('pysqlite3')
+import pysqlite3
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
+import os
+os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
+
+import streamlit as st
+# ... rest of your code
 import streamlit as st
 import os
 from tempfile import TemporaryDirectory
